@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button'
 
 import {Home} from './components/Home'
-import {Department} from './components/Department'
-import {Users} from './components/Users'
+import {Department} from './components/Departments/Department'
+import {Users} from './components/Users/Users'
 import {Navigation} from './components/Navigation'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
