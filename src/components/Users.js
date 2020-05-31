@@ -21,7 +21,7 @@ export class Users extends Component {
 
     refreshList()
     {
-       fetch("https://localhost:5001/api/users")
+       fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/users")
        .then(response=> response.json())
        .then(data=> { 
         this.setState({users:data});
@@ -32,7 +32,7 @@ export class Users extends Component {
     {
     if (window.confirm('Are you sure ?'))
     {
-        fetch("https://localhost:5001/api/users/" + userid, {
+        fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/users/" + userid, {
             method:'DELETE',
             header: { "Accept":"application/json",
                       "Content-Type":"application/json",

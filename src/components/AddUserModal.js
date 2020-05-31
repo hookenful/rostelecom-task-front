@@ -18,7 +18,7 @@ export class AddUserModal extends Component{
     }
 
     componentDidMount(){
-        fetch("https://localhost:5001/api/departments/")
+        fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/departments/")
         .then(response => response.json())
         .then(data=>{
             this.setState({deps: data});
@@ -26,7 +26,7 @@ export class AddUserModal extends Component{
     }
 
     handleSubmit(event){
-        fetch("https://localhost:5001/api/users/", {
+        fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/users/", {
             method: "POST",
             headers:{
                 "Accept":"application/json",

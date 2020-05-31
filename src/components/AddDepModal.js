@@ -18,7 +18,7 @@ export class AddDepModal extends Component{
 
     handleSubmit(event){
         event.preventDefault();
-        fetch("https://localhost:5001/api/departments", {
+        fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/departments", {
             method: "POST",
             headers:{
                 "Accept":"application/json",

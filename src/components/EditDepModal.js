@@ -18,7 +18,7 @@ snackbarClose = (event) => {
 
 handleSubmit(event){
     event.preventDefault();
-    fetch("https://localhost:5001/api/departments/" + event.target.DepartmentId.value, {
+    fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/departments/" + event.target.DepartmentId.value, {
         method: "PUT",
         headers:{
             "Accept":"application/json",

@@ -20,7 +20,7 @@ export class Department extends Component {
 
      refreshList()
     {
-       fetch("https://localhost:5001/api/departments")
+       fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/departments")
        .then(response=> response.json())
        .then(data=> { 
         this.setState({deps:data});
@@ -31,7 +31,7 @@ export class Department extends Component {
     {
     if (window.confirm('Are you sure ?'))
     {
-        fetch("https://localhost:5001/api/departments/" + depid, {
+        fetch("https://rostelecomtaskapi20200531200554.azurewebsites.net/api/departments/" + depid, {
             method:'DELETE',
             header: { "Accept":"application/json",
                       "Content-Type":"application/json",
