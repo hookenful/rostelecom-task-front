@@ -17,6 +17,7 @@ export class Department extends Component {
     {
         this.refreshList();
     }
+
      refreshList()
     {
        fetch("https://localhost:5001/api/departments")
@@ -24,6 +25,23 @@ export class Department extends Component {
        .then(data=> { 
         this.setState({deps:data});
        });
+    }
+
+    deleteDep(depid)
+    {
+    if (window.confirm('Are you sure ?'))
+    {
+        fetch("https://localhost:5001/api/departments/" + depid, {
+            method:'DELETE',
+            header: { "Accept":"application/json",
+                      "Content-Type":"application/json",
+                       "Origin": "*"
+            },
+        
+        })
+        .then(result =>this.setState(this.refreshList))
+        
+    }
     }
 
     render(){
@@ -53,6 +71,12 @@ export class Department extends Component {
                     onClick = {() => this.setState({editModalShow:true, depid: dep.id, depname: dep.name})}
                     >
                         Edit
+                    </Button>
+                    <Button
+                        className ="mr-2" 
+                        onClick ={() => this.deleteDep(dep.id)}
+                        variant ="danger">
+                        Delete
                     </Button>
                     <EditDepModal
                     show = {this.state.editModalShow}

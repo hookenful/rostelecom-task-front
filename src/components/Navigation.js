@@ -13,7 +13,7 @@ export class Navigation extends Component {
                         to = "/">Home</NavLink>
 
                         <NavLink className = "d-inline p-2 bg-dark text-white"
-                        to = "/department">Department</NavLink>
+                        to = "/department">Departments</NavLink>
 
                         <NavLink className = "d-inline p-2 bg-dark text-white"
                         to = "/users">Users</NavLink>
