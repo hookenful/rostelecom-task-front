@@ -18,7 +18,7 @@ snackbarClose = (event) => {
 
 handleSubmit(event){
     event.preventDefault();
-    fetch("https://localhost:5001/api/departments", {
+    fetch("https://localhost:5001/api/departments/" + event.target.DepartmentId.value, {
         method: "PUT",
         headers:{
             "Accept":"application/json",
@@ -26,14 +26,13 @@ handleSubmit(event){
             "Origin": "*"
         },
         body: JSON.stringify({
-            Id: event.target.DepartmentId.value,
             Name: event.target.DepartmentName.value
         })
     })
     .then(res=>res.json())
     .then((result)=>
     {
-        this.setState({snackbaropen: true, snackbarmsg: "Added successfully!"})
+        this.setState({snackbaropen: true, snackbarmsg: "Edited successfully!"})
         
     },
     (error) =>{

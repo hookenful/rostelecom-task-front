@@ -10,13 +10,14 @@ export class Department extends Component {
     constructor(props){
         super(props);
         this.state = {deps:[], addModalShow: false, editModalShow: false}
+
     }
 
     componentDidMount()
     {
         this.refreshList();
     }
-    refreshList()
+     refreshList()
     {
        fetch("https://localhost:5001/api/departments")
        .then(response=> response.json())
@@ -28,8 +29,8 @@ export class Department extends Component {
     render(){
 
      const {deps, depid, depname} = this.state;
-     let addModalClose = () => this.setState({addModalShow:false})
-     let editModalClose = () => this.setState({editModalShow:false})
+     let addModalClose = () => this.setState({addModalShow:false}, this.refreshList)
+     let editModalClose = () => this.setState({editModalShow:false}, this.refreshList)
     return (
         <div>
      <Table className = "mt-4" striped bordered hover size ="sm">
