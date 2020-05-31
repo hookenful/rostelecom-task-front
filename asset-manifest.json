@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rostelecom-task-front/static/css/main.c9f2f2bd.chunk.css",
+    "main.js": "/rostelecom-task-front/static/js/main.10027eae.chunk.js",
+    "main.js.map": "/rostelecom-task-front/static/js/main.10027eae.chunk.js.map",
+    "runtime-main.js": "/rostelecom-task-front/static/js/runtime-main.fb32f04e.js",
+    "runtime-main.js.map": "/rostelecom-task-front/static/js/runtime-main.fb32f04e.js.map",
+    "static/js/2.a362ee28.chunk.js": "/rostelecom-task-front/static/js/2.a362ee28.chunk.js",
+    "static/js/2.a362ee28.chunk.js.map": "/rostelecom-task-front/static/js/2.a362ee28.chunk.js.map",
+    "index.html": "/rostelecom-task-front/index.html",
+    "precache-manifest.3cc46b50dd22198026cabe92e49a8fc6.js": "/rostelecom-task-front/precache-manifest.3cc46b50dd22198026cabe92e49a8fc6.js",
+    "service-worker.js": "/rostelecom-task-front/service-worker.js",
+    "static/css/main.c9f2f2bd.chunk.css.map": "/rostelecom-task-front/static/css/main.c9f2f2bd.chunk.css.map",
+    "static/js/2.a362ee28.chunk.js.LICENSE.txt": "/rostelecom-task-front/static/js/2.a362ee28.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb32f04e.js",
+    "static/js/2.a362ee28.chunk.js",
+    "static/css/main.c9f2f2bd.chunk.css",
+    "static/js/main.10027eae.chunk.js"
+  ]
+}
